@@ -1,134 +1,145 @@
 /* work sans font from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:ital,wght@0,700;0,800;1,400;1,700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:ital,wght@0,700;0,800;1,400;1,700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
 * {
-    font-family: 'Lato', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 /* Header style */
-header{
-    background: rgba(255, 144, 14, 0.10);
-    padding: 50px 230px;
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 50px 230px;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav-title{
-    font-weight: 700;
-    font-size: 2.8rem;
-    color: #131313;
+.nav-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #131313;
 }
-nav > ul{
-    display: flex;
-    gap: 30px;
+nav > ul {
+  display: flex;
+  gap: 30px;
 }
-nav li{
-    list-style: none;
-    font-weight: 500;
-    font-size: 1rem;
+nav li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1rem;
 }
-nav li a{
-    text-decoration: none;
-    color: #424242;
+nav li a {
+  text-decoration: none;
+  color: #424242;
 }
 
 /* Banner */
 
-.banner-content{
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
 }
-.banner-tittle{
-    font-weight: 700;
-    color: #131313;
-    font-size: 4rem;
+.banner-tittle {
+  font-weight: 700;
+  color: #131313;
+  font-size: 4rem;
 }
-.banner-details{
-    font-weight: 400;
-    font-size: 1rem;
-    color: #727272;
-    margin-bottom: 30px;
+.banner-details {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #727272;
+  margin-bottom: 30px;
 }
-.btn-primary{
-    background-color: #FF900E;
-    border-radius: 8px;
-    padding: 20px 25px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #FFFFFF;
-    cursor: pointer;
-    border: 0px;
+.btn-primary {
+  background-color: #ff900e;
+  border-radius: 8px;
+  padding: 20px 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0px;
 }
-.banner img{
-    margin-top: 50px;
-    width: 100%;
+.banner img {
+  margin-top: 50px;
+  width: 100%;
 }
 
+/* Teams section */
+main {
+  max-width: 1440px;
+  margin: 4.3rem auto;
+}
+/* Teams style */
+.teams-container {
+  display: flex;
+  align-items: center;
+}
+.teams-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem; /* 24px*/
+}
+.teams-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+/* Teams Tittle */
+.teams-tittle {
+  font-size: 2.7rem;
+}
+.quick-list {
+  color: #727272;
+  font-weight: 500;
+}
+.of-our {
+  color: #131313;
+  font-weight: 700;
+}
+.features {
+  color: #ff900e;
+  font-weight: 700;
+}
+/* Teams Description */
+.description-gray-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #727272;
+}
 
 /* Responsive style */
 /* small device */
 @media screen and (max-width: 576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    
+  header {
+    padding: 20px;
+  }
+  nav,
+  .teams-container {
+    flex-direction: column;
+  }
+  .teams-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .teams-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 /* Medium device */
 @media screen and (min-width: 576px) and (max-width: 922px) {
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    
-}
-/* Teams section */
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-/* Teams Tittle */
-.teams-tittle{
-    font-size: 2.7rem;
-}
-.quick-list{
-    color: #727272;
-    font-weight: 500;
-}
-.of-our{
-    color: #131313;
-    font-weight: 700;
-}
-.features{
-    color: #FF900E;
-    font-weight: 700;
-}
-/* Teams Description */
-.teams-description{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #727272;
-}
-/* Teams style */
-.teams-container{
-    display: flex;
-    align-items: center;
-}
-.teams-image{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem; /* 24px*/
-}
-.teams-content{
-    padding: 70px;
+  header {
+    padding: 50px;
+  }
+  nav,
+  .teams-container {
+    flex-direction: column;
+  }
+  .teams-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
