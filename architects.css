@@ -167,6 +167,9 @@ main {
   .teams-container {
     flex-direction: column;
   }
+  .facts-card-container{
+    gap: 10px;
+  }
   .teams-content {
     padding-left: 50px;
     padding-right: 50px;
