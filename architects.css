@@ -92,3 +92,43 @@ nav li a{
     }
     
 }
+/* Teams section */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Teams Tittle */
+.teams-tittle{
+    font-size: 2.7rem;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.of-our{
+    color: #131313;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+    font-weight: 700;
+}
+/* Teams Description */
+.teams-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+}
+/* Teams style */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem; /* 24px*/
+}
+.teams-content{
+    padding: 70px;
+}
